@@ -1,0 +1,197 @@
+// out: ../css/
+
+@import url(./base.less);
+@rootSize:3.75vw;
+
+body {
+  background-color: #f9fafb;
+}
+
+.hd {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 (15 / @rootSize);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: (50 / @rootSize);
+  background-color: #fff;
+  .left {
+    width: (235 / @rootSize);
+    height: (50 / @rootSize);
+    background-image: url(../assets/head.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  a {
+    width: (80 / @rootSize);
+    height: (30 / @rootSize);
+    background-color: #ffe31b;
+    font-size: (14 / @rootSize);
+    text-align: center;
+    line-height: (30 / @rootSize);
+    border-radius: 4vw;
+  }
+}
+
+.sear {
+  margin-top: (50 / @rootSize);
+  padding: (10 / @rootSize) (15 / @rootSize);
+  height: (52 / @rootSize);
+  .txt {
+    height: (32 / @rootSize);
+    color: #A1A4B3;
+    background-color: #F2F4F5;
+    border-radius: (16 / @rootSize);
+    text-align: center;
+    font-size: (14 / @rootSize);
+    line-height: (32 / @rootSize);
+    .icon-sousuo {
+      font-size: (16 / @rootSize);
+    }
+  }
+}
+
+.banner {
+  padding: 0 (15 / @rootSize);
+  height: (108 / @rootSize);
+  li {
+    width: (345 / @rootSize);
+    height: (108 / @rootSize);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: (4 / @rootSize);
+    }
+  }
+}
+
+.list {
+  margin-top: (20 / @rootSize);
+  padding: 0 (15 / @rootSize);
+  height: (390 / @rootSize);
+  // background-color: pink;
+  .bomd {
+    ul {
+      li {
+        display: flex;
+        margin-bottom: (16 / @rootSize);
+        height: (105 / @rootSize);
+        background-color: #fff;
+        border-radius: (4 / @rootSize);
+        .pic {
+          margin-right: (16 / @rootSize);
+          img {
+            width: (105 / @rootSize);
+            border-radius: (4 / @rootSize);
+          }
+        }
+        .txt {
+          font-size: (12 / @rootSize);
+          .more {
+            font-size: (14 / @rootSize);
+            color: #333;
+            .icon-right {
+              font-size: (16 / @rootSize);
+            }
+          }
+          a {
+            display: block;
+            color: #a1a4b3;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title {
+  margin-bottom: (16 / @rootSize);
+  display: flex;
+  justify-content: space-between;
+  line-height: (26 / @rootSize);
+  h4 {
+    font-size: (20 / @rootSize);
+  }
+  a {
+    font-size: (12 / @rootSize);
+    color: #a1a4b3;
+  }
+}
+
+.recommand {
+  padding: 0 (15 / @rootSize);
+  // background-color: pink;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      margin-bottom: (15 / @rootSize);
+      width: (105 / @rootSize);
+      height: (143 / @rootSize);
+      .pic {
+        position: relative;
+        width: (105 / @rootSize);
+        height: (105 / @rootSize);
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: (10 / @rootSize);
+          object-fit: cover;
+        }
+        .cover {
+          width: (70 / @rootSize);
+          height: (28 / @rootSize);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          color: #fff;
+          text-align: center;
+          line-height: (28 / @rootSize);
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 0 (10 / @rootSize) 0 (10 / @rootSize);
+        }
+      }
+      .txt {
+        font-size: (14 / @rootSize);
+      }
+    }
+  }
+}
+
+.download {
+  padding-left: (15 / @rootSize);
+  padding-right: (10 / @rootSize);
+  display: flex;
+  position: fixed;
+  left: 4vw;
+  bottom: 8vw;
+  align-items: center;
+  width: (345 / @rootSize);
+  height: (45 / @rootSize);
+  background: #fff;
+  border-radius: (22.5 / @rootSize);
+  img {
+    margin-right: (10 / @rootSize);
+    width: (36 / @rootSize);
+    height: (36 / @rootSize);
+  }
+  p {
+    flex: 1;
+    font-size: (14 / @rootSize);
+  }
+  .icon-right {
+    width: (32 / @rootSize);
+    height: (32 / @rootSize);
+    border-radius: 50%;
+    background-color: #f2f3f5;
+    text-align: center;
+    line-height: (32 / @rootSize);
+    font-size: (16 / @rootSize);
+  }
+}
